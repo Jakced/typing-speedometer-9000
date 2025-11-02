@@ -1,0 +1,220 @@
+@charset "utf8";
+
+/*
+Jakob Cederblad
+jace2300
+jace2300@student.miun.se
+*/
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-image: url("../img/background.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-icon {
+    animation-name: pulseScale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulseScale {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@font-face {
+    font-family:'roboto';
+    src: url(../font/Roboto-Black.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family:'jaro';
+    src: url(../font/Jaro-Regular.ttf);
+    font-weight: 400;
+}
+
+.page-title
+{
+    color: rgb(205,154,6);
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: jaro;
+    font-weight: 100;
+}
+
+.settings {
+    display: inline-block;
+    width: 600px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.preferences {
+    display: inline-block;
+    width: 300px;
+    margin-right: 90px;
+    padding-left: 10px;
+}
+
+.casing, .language {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.casing:focus, .language:focus {
+    opacity: 0.2;
+}
+
+.text-selection {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+}
+
+.text-dropdown-label {
+    display: block;
+    padding-bottom: 4px;
+}
+
+.text-dropdown {
+    border-radius: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 150px;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.casing-checkbox, .rb-swe, .rb-eng {
+    cursor: pointer;
+    opacity: 0.9
+}
+
+.casing-checkbox:hover, .text-dropdown:hover, .rb-swe:hover, .rb-swe:hover {
+    opacity: 1;
+}
+
+.text-section {
+    background-color: black;
+    border: 3px groove rgb(205,154,6);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.text-title {
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.text-author {
+    color: rgb(232,224,7);
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.text-content {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.text-input {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(205,154,6);
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text-input:focus {
+    background-image: none;
+}
+
+.button-start {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 2px solid rgb(205,154,6);
+    cursor: pointer;
+}
+
+.button-start:hover {
+    opacity: 0.8;
+}
+
+.button-start:active {
+    opacity: 0.5;
+}
+
+.text-grosswpm, .text-netwpm, .text-accuracy, .text-errors {
+    display: inline-block;
+    color: rgb(215, 215, 215);
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.text-grosswpm-content, .text-netwpm-content, .text-accuracy-content, .text-errors-content {
+    color:yellow;
+
+}
+
+.table-row {
+    padding-left: 50px;
+    text-align: right;
+}
+
+.gross-wpm-graph {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+footer {
+    border-top: 2px solid rgba(255,255,255,0.7);
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.footer-copyright, .footer-contactinfo {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

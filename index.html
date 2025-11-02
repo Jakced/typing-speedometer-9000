@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Jakob Cederblad
+jace2300
+jace2300@student.miun.se
+-->
+<html lang="en-GB">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="keywords" content="Speedometer, keyboard, typing, speed, keyboard">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/main.js" defer></script>
+		<title>Typing Speed Calculator</title>
+		<link rel="icon" href="./img/favicon.ico">
+	</head>
+	<body>
+		<header>
+			<h1 class="page-title">Typing speedometer 9000.</h1>
+			<img class="header-icon" src="img/speed.png" alt="Speed Typing Logo" width="100">
+		</header>
+		<main>
+			<div class ="settings">
+				<div>
+					<div class ="preferences">
+						<div class="casing">
+							<input type="checkbox" class="casing-checkbox" id="casing-checkbox">
+							<label class="casing-label" for="casing-checkbox">Ignore Casing</label>
+							<input type="checkbox" class="allowcorrection-checkbox" id="allowcorrection-checkbox">
+							<label class="allowcorrection-label" for="allowcorrection-checkbox">Allow Error Correction</label>
+						</div>
+						<div class="language">
+							<input type="radio" class="rb-swe" id="lang_swe" name="language" value="swedish" checked="checked">
+							<label class="lang-swe-label" for="lang_swe">Swedish</label>
+							<input type="radio" class="rb-eng" id="lang_eng" name="language" value="english">
+							<label class="lang-eng-label" for="lang_eng">English</label>
+						</div>
+					</div>
+					<div class ="text-selection">
+						<label class="text-dropdown-label" for="text-dropdown">Choose text</label>
+						<select class ="text-dropdown" id="text-dropdown"> </select>
+					</div>
+				</div>
+			</div>
+			<section class ="text-section">
+				<h2 class="text-title" id="text-title">Title</h2>
+				<h3 class="text-author" id="text-author">Author</h3>
+				<p class="text-content" id="text-content"></p>
+			</section>
+			<input type="text" class="text-input" id="text-input" placeholder="Type here...">
+			<input type="image" class="button-start" id="button-play" src="img/play.png" alt="Submit Form">
+			<table class="statistics">
+				<tr>
+					<td rowspan="2">
+						<canvas class="gross-wpm-graph" id="gross-wpm-graph"></canvas>
+					</td>
+					<td class="table-row">
+						<p class="text-grosswpm">Gross WPM: <span id="text-grosswpm" class ="t
+							
+							ext-grosswpm-content">0</span></p>
+					</td>
+					<td class="table-row">
+						<p class="text-accuracy">Accuracy: <span id="text-accuracy" class ="text-accuracy-content">0%</span></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="table-row">
+						<p class="text-netwpm">Net WPM: <span id="text-netwpm" class ="text-netwpm-content">0</span></p>
+					</td>
+					<td class="table-row">
+						<p class="text-errors">Errors: <span id = "text-errors" class ="text-errors-content">0</span></p>
+					</td>
+				</tr>
+			</table>
+		</main>
+		<footer>
+			<p class="footer-copyright">Copyright &copy; 2024 Jakob Cederblad. No rights reserved.</p>
+			<p class="footer-contactinfo"><a href="mailto:jace2300@student.miun.se">Contact Me!</a></p>
+		</footer>
+	</body>
+</html>
+
